@@ -128,4 +128,4 @@ bot.on('guildMemberAdd', (member) => {
     }).catch(console.error)
 })
 
-bot.login("NDcyMzU1MjE0MTQyMjEwMDcw.DjzEUQ.ElX_5HReuEK7hoMss5GvyiI7LHg");
+bot.login("tokendiscord");
