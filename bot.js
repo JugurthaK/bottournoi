@@ -13,7 +13,7 @@ bot.on('message', (message) => {
 });
 
 bot.on('message', (message) => {
-    if (message.content.startsWith("!tournoi") && message.channel.id == '472403117783121920') {
+    if (message.content.startsWith("!tournoi") && message.channel.name === "bot_tournoi") {
         var member = message.member;
         var args = message.content.split(" ");
         var pseudo = args[1];
