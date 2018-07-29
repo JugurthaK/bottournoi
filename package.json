@@ -1,7 +1,7 @@
 {
   "name": "discordbot",
   "version": "1.0.0",
-  "description": "",
+  "description": "*Un bot en nodeJS*",
   "main": "app.js",
   "dependencies": {
     "discord.js": "^11.3.2",
@@ -12,5 +12,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JugurthaK/bot-tournoi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JugurthaK/bot-tournoi/issues"
+  },
+  "homepage": "https://github.com/JugurthaK/bot-tournoi#readme"
 }
