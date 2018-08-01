@@ -12,4 +12,4 @@ _*Le fonctionnement est relativement simple*_
 *J'ai fait une détection de salon pour permettre une meilleure gestion du serveur en général, de ce fait vous devez créer un channel **textuel** qui s'appellera "bot_tournoi"*
 
 #Update 01/08/2018
-**Désormais le bot inclue un système d'authentification, le joueur aura besoin d'envoyer en DM "!auth sonidfortnite" au bot, après quoi il aura (ou non), le rôle "Certifié" sur le discord"
+**Désormais le bot inclue un système d'authentification, le joueur aura besoin d'envoyer en DM "!auth sonidfortnite" au bot, après quoi il aura (ou non), le rôle "Certifié" sur le discord"**
