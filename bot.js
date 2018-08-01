@@ -52,6 +52,11 @@ bot.on('message', (message) => {
                             let role = member.guild.roles.find("name", plateforme.toUpperCase());
                             member.addRole(role).catch(console.error);
                             let ftnAccountId = stats.info.accountId;
+                           
+                            if (member.roles.has(member.guild.roles.find("name", "Certifié").id)){
+                                member.removeRole(member.guild.roles.find("name", "Certifié").id);
+                                message.author.sendMessage("Votre compte n'est plus Certificé car vous vous êtes inscrit sous un nouveau Pseudo");
+                            }
 
                             if (stats.lifetimeStats.matches >= 1000) {
 
