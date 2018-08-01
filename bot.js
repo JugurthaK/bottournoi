@@ -11,6 +11,8 @@ let fn = key => {
     return temp
 }
 
+let inscrit = [];
+
 let fortniteAPI = new fortnite([
     auth.fortniteEmail,
     auth.fortnitePassword,
@@ -52,6 +54,7 @@ bot.on('message', (message) => {
                             let role = member.guild.roles.find("name", plateforme.toUpperCase());
                             member.addRole(role).catch(console.error);
                             let ftnAccountId = stats.info.accountId;
+                            console.log(ftnAccountId);
                            
                             if (member.roles.has(member.guild.roles.find("name", "Certifié").id)){
                                 member.removeRole(member.guild.roles.find("name", "Certifié").id);
@@ -138,6 +141,8 @@ bot.on('message', (message) => {
                 message.author.createDM().then(channel => {
                     return channel.send("*Compte certifié*");
                 })
+
+                inscrit.push(message.author.username);
            
             } else {
                 message.author.createDM().then(channel => {
@@ -150,6 +155,10 @@ bot.on('message', (message) => {
                 message.delete(1000);
             }).catch()
         }
+    }
+
+    if (message.content.startsWith("!inscrits")){
+        message.reply("Les inscrits sont: "+ inscrit);
     }
 });
 
